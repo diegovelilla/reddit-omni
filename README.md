@@ -9,11 +9,9 @@ Reddit-Omni is an AI-powered bot that scrapes Reddit for questions, conducts res
 4. [Installation](#installation)
 5. [Configuration](#configuration)
 6. [Usage](#usage)
-7. [Toolbox](#toolbox)
-8. [Models](#models)
-9. [Learnings](#learnings)
-10. [License](#license)
-11. [Contact](#contact)
+7. [Models](#models)
+8. [License](#license)
+9. [Contact](#contact)
 
 ---
 
@@ -24,6 +22,19 @@ Reddit-Omni is an AI-powered bot designed to enhance user interaction on Reddit 
 - No cost API usage.
 - Leverage of Meta's Llama 3.1 70B model.
 - Automatization of reddit commenting.
+
+## Workflow
+There are 4 tool usages in this project:
+- reddit_scrapper: Scrapes a given subreddit for a number of posts.
+- search_tool: Searches a given query on Google.
+- scrape_tool: Scrapes a given webpage.
+- reddit_commenter: Comments given Reddit post.
+
+  
+Also, the AI model adquires 3 diferent personas in this project:
+- Planner: Recieves the reddit scraped question and generates queries for the search_tool.
+- Researcher: Receives the titles, summaries and URLs from the search_tool and decides which is more likely to contain useful information about the question.
+- Writer: Recieves the scrapped webpages dump and generates a concise and correct answer to the initial question.
 
 ## Files
 
@@ -71,13 +82,6 @@ To use reddit-omni just run the following command:
 ```bash
 python3 -m app
 ```
-
-## Toolbox:
-Here are all the tools supported:
-- reddit_scrapper: Scrapes a given subreddit for a number of posts.
-- reddit_commenter: Comments given Reddit post.
-- search_tool: Searches a given query on Google.
-- scrape_tool: Scrapes a given webpage.
 
 ## Models
 The models used for this project are:
