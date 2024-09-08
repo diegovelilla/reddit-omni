@@ -5,13 +5,12 @@ Reddit-Omni is an AI-powered bot that scrapes Reddit for questions, conducts res
 ## Index
 1. [Overview](#overview)
 2. [Features](#features)
-3. [Files](#files)
-4. [Installation](#installation)
-5. [Configuration](#configuration)
-6. [Usage](#usage)
-7. [Models](#models)
-8. [License](#license)
-9. [Contact](#contact)
+3. [Installation](#installation)
+4. [Configuration](#configuration)
+5. [Usage](#usage)
+6. [Models](#models)
+7. [License](#license)
+8. [Contact](#contact)
 
 ---
 
@@ -35,29 +34,6 @@ Also, the AI model adquires 3 diferent personas in this project:
 - Planner: Recieves the reddit scraped question and generates queries for the search_tool.
 - Researcher: Receives the titles, summaries and URLs from the search_tool and decides which is more likely to contain useful information about the question.
 - Writer: Recieves the scrapped webpages dump and generates a concise and correct answer to the initial question.
-
-## Files
-
-### `requirements.txt`
-This file lists all the Python packages required to run the project. It ensures that all necessary dependencies are installed for the project to function correctly.
-
-### `app.py`
-This is the main file of the project and is the one that needs to be run in order to use reddit-omni.
-
-### `__init__.py`
-This files exist in every folder in order to use imports from other folders.
-
-### `config`
-This folder contains the .env file with all API keys.
-
-### `models`
-This folder contains one file per available model.
-
-### `prompts`
-This folder contains prompting files, one for formatting and another one with an initial system prompt.
-
-### `tools`
-This folder contains one file per available tool and another one for the toolbox that agglutinates all tools and its docs.
 
 ## Installation
 To install the reddit-omni, follow these steps:
