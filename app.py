@@ -19,7 +19,7 @@ def prepare_system_prompts():
 
 def chain_of_action(model, system_prompt_planner, system_prompt_researcher, system_prompt_writer):
     # Scrape reddit posts for questions
-    reddit_scrape = "quien es el invitado de hoy en el hormiguero a dia 12 de septiembre?"
+    reddit_scrape = "where will the next olympics be held?"
     """
     reddit_scrape, post_ids = reddit_scrapper(["askbaking", "1"])
     print(f"Somebody in reddit has this question:\n{reddit_scrape}")
@@ -76,7 +76,7 @@ def chain_of_action(model, system_prompt_planner, system_prompt_researcher, syst
     print(colored(f"\n\n{writer}", "cyan"))
 
     # Use the reddit_poster tool
-    #reddit_commenter([post_ids[0], writer["answer"]])
+    # reddit_commenter([post_ids[0], writer["answer"]])
 
 
 if __name__ == "__main__":
